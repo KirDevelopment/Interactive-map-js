@@ -1,0 +1,272 @@
+body {
+    font-size: 14px;
+    background-color: aliceblue;
+}
+
+.no_pointer {
+    pointer-events: none;
+}
+
+/* Полигоны магазинов */
+.scheme {
+    margin: 0 auto;
+    position: relative;
+}
+
+.scheme svg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.scheme img {
+    width: 100%;
+}
+
+/* Цвета магазинов - при наведении мышкой и активный */
+.scheme path:hover,
+#hover {
+    fill: #0cf;
+}
+
+/* .scheme path.active {
+    fill: #ff8c0b !important;
+} */
+
+/* Названия и подсказки магазинов */
+.scheme-item {
+    position: absolute;
+    cursor: pointer;
+}
+
+.scheme-name {
+    position: absolute;
+    width: 70px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 13px;
+    top: 85px;
+    left: 65px;
+}
+
+.scheme-popup {
+    display: none;
+    width: 178px;
+    height: 62px;
+    margin-left: 26px;
+    background: #1BC061;
+    position: relative;
+    border-radius: 99px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.scheme-popup>h2 {
+    font-size: 16px;
+}
+
+.scheme-popup:before {
+    content: '';
+    background-image: url(pointer.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    display: inline-block;
+    border: 32px solid transparent;
+    top: 30px;
+    right: 70px;
+}
+
+/* iPhone 5, 5S, 5C, 5 SE (портретный режим) */
+@media only screen and (orientation: portrait) and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .scheme-popup {
+        width: 79%;
+        line-height: 10px;
+    }
+
+    #sc_1 {
+        left: -6% !important;
+        bottom: 96% !important;
+    }
+
+    #sc_2 {
+        bottom: 89% !important;
+        left: 17% !important;
+    }
+
+    #sc_3 {
+        left: 69% !important;
+    }
+
+    #sc_4 {
+        bottom: 35% !important;
+        left: 50% !important;
+    }
+
+    #sc_5 {
+        bottom: 73% !important;
+        left: 40% !important;
+    }
+
+    #sc_6 {
+        bottom: 73% !important;
+        left: 50% !important;
+    }
+
+    #sc_7 {
+        bottom: 72% !important;
+        left: 14% !important;
+    }
+
+    #sc_8 {
+        bottom: 76% !important;
+        left: -10% !important;
+    }
+
+    #sc_9 {
+        bottom: 44% !important;
+        left: 31% !important;
+    }
+
+    #sc_10 {
+        bottom: 45% !important;
+        left: 15% !important;
+    }
+
+    #sc_11 {
+        bottom: 44% !important;
+        left: 0% !important;
+    }
+
+    #sc_12 {
+        bottom: 55% !important;
+        left: 2% !important;
+    }
+
+    #sc_13 {
+        bottom: 69% !important;
+        left: -10% !important;
+        width: 23% !important;
+    }
+
+    #sc_13>.scheme-popup>h2 {
+        font-size: 9px !important;
+    }
+
+    #sc_13>.scheme-popup:before {
+        top: 29px !important;
+        right: 15px !important;
+    }
+
+    .scheme-popup>h2 {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .scheme-popup>span {
+        font-size: 10px;
+    }
+
+    .scheme-popup:before {
+        top: 30px;
+        right: 35px;
+    }
+}
+
+/* iPad (все) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .scheme-popup {
+        width: 100%;
+        line-height: 20px;
+    }
+
+    .scheme-popup>h2 {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .scheme-popup>span {
+        font-size: 12px;
+    }
+
+    .scheme-popup:before {
+        top: 29px;
+        right: 35px;
+    }
+
+    #sc_1 {
+        left: -6% !important;
+        bottom: 96% !important;
+    }
+
+    #sc_2 {
+        bottom: 89% !important;
+        left: 17% !important;
+    }
+
+    #sc_3 {
+        left: 69% !important;
+    }
+
+    #sc_4 {
+        bottom: 35% !important;
+        left: 50% !important;
+    }
+
+    #sc_5 {
+        bottom: 73% !important;
+        left: 40% !important;
+    }
+
+    #sc_6 {
+        bottom: 73% !important;
+        left: 50% !important;
+    }
+
+    #sc_7 {
+        bottom: 72% !important;
+        left: 14% !important;
+    }
+
+    #sc_8 {
+        bottom: 76% !important;
+        left: -10% !important;
+    }
+
+    #sc_9 {
+        bottom: 44% !important;
+        left: 31% !important;
+    }
+
+    #sc_10 {
+        bottom: 45% !important;
+        left: 15% !important;
+    }
+
+    #sc_11 {
+        bottom: 44% !important;
+        left: 0% !important;
+    }
+
+    #sc_12 {
+        bottom: 55% !important;
+        left: 2% !important;
+    }
+
+    #sc_13 {
+        bottom: 70% !important;
+        left: -8% !important;
+        width: 15% !important;
+    }
+
+    #sc_13>.scheme-popup>h2 {
+        font-size: 12px !important;
+    }
+
+    #sc_13>.scheme-popup:before {
+        top: 29px !important;
+        right: 15px !important;
+    }
+}
